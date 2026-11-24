@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ -z "$1" ]; then echo "使用法: stzip <ファイルまたはディレクトリ>"; exit 1; fi
+target="${1%/}"
+tar -cf - "$target" | zstd --ultra -20 -T0 -v --zstd=wlog=26 --long=26 -M512MB -o "${target}.tar.zst
