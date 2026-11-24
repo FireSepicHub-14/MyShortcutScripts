@@ -1,0 +1,36 @@
+# 環境変数・機密情報
+.env
+.env.*
+!.env.example
+
+# OS・エディタ
+**/*.DS_Store
+**/*.vscode/
+.idea/
+*.swp
+
+
+# ビルド成果物・依存関係・ログ
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+venv/
+.venv/
+*.log
+
+
+# other
+**/*.old
+
+**/*.zip
+**/*.tar.gz
+**/*.tar.zst
+**/*.7z
+
+**/*.dll
+
+**/*.zsh_history
+**/*.zsh_sessions
+**/*.zcalc_history
