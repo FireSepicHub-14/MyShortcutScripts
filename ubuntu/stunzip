@@ -1,0 +1,4 @@
+#!/bin/bash
+if [ -z "$1" ]; then echo "使用法: stunzip <ファイル.tar.zst>"; exit 1; fi
+zstd -d -T0 -v -M2048MB "$1" -c | tar -xf -
+
